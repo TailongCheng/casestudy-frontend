@@ -1,15 +1,4 @@
 function getBackend() {
-    const url = 'http://54.208.128.50:5000/'
-    fetch(url)
-    .then(response => response.json())  
-    .then(json => {
-        console.log(json);
-        document.getElementById("frontend").innerHTML = JSON.stringify(json)
-    })
-}
-
-
-function getBackend() {
     const url = 'http://54.235.50.15:5000/';
     fetch(url)
     .then(response => response.text()) // Parse the response as text
