@@ -7,6 +7,9 @@ ENV NODE_ENV production
 # Set the working directory in the container
 WORKDIR /nodejsapp
 
+# Install serve package globally
+RUN npm install -g serve
+
 # Change the ownership to the node user and node group.
 RUN chown -R node:node /nodejsapp
 
@@ -22,5 +25,5 @@ COPY . .
 # Expose the port your server runs on
 EXPOSE 3000
 
-# Command to run your application
-CMD ["node", "app.js"]
+# Command to serve static files
+CMD ["serve", "-s", ".", "-l", "3000"]
