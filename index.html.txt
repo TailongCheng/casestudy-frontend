@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Application</title>
+</head>
+<body>
+    <h1>Welcome to My Web Application</h1>
+    <button onclick="getBackend()">Load Backend Data</button>
+    <div id="frontend"></div>
+
+    <!-- Include your JavaScript file -->
+    <script src="src/app.js"></script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Application</title>
+    <style>
+        /* Center the title */
+        h1 {
+            text-align: center;
+        }
+
+        /* Center the button */
+        button {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px; /* Add some space below the button */
+        }
+
+        /* Add space to display the backend message */
+        #frontend {
+            text-align: center; /* Center the displayed text */
+            margin-top: 20px; /* Add space above the message */
+            padding: 10px;
+            border: 1px solid #ccc; /* Add border for clarity */
+        }
+    </style>
+</head>
+<body>
+    <!-- Center the title -->
+    <h1>Welcome to My Web Application</h1>
+    <!-- Center the button and add space below -->
+    <button onclick="getBackend()">Load Backend Data</button>
+    <!-- Add space above and style for displaying the backend message -->
+    <div id="frontend"></div>
+
+    <!-- Include your JavaScript file -->
+    <script src="src/app.js"></script>
+</body>
+</html>
